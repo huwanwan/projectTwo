@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>order</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp"/>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/base.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/order.css" />
+</head>
+<body>
+    <!-- <div class="orderCont"> --> 
+        <header id="header_order">
+            <h1>手机支付</h1>
+        </header>
+        <main id="main_order">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>条码</th>
+                        <th>商品名字</th>
+                        <th>商品数量</th>
+                        <th>商品价格</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">总价格:￥<span></span>元</td>
+                    </tr>
+                </tfoot>
+                <tbody></tbody>
+            </table>
+            
+        </main>
+        <footer id="footer_order">
+            <div id="myButtons3" class="bs-example">
+                <button type="button" class="btn btn-primary paySuccess" 
+                        data-loading-text="已付款">确认付款
+                </button>
+            </div>
+        </footer>
+    <script type="text/javascript" src="../js/require.js" data-main="../js/order"></script>
+</body>
+</html>

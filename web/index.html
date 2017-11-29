@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>系统首页</title>
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+        <link rel="stylesheet" type="text/css" href="./css/base.css" />
+        <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css" />
+        <link href="libs/accordion/css/jquery-accordion-menu.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css" />
+    </head>
+    <body>
+    <div class='mh_manage clearfix'>
+        <div class="content m1 fl">
+            <div id="jquery-accordion-menu" class="jquery-accordion-menu green">
+                <div class="jquery-accordion-menu-header" id="form"><h1>超市后台管理系统</h1></div>
+                <ul id="demo-list">
+                    <li class="active">
+                        <a href="#"><i class="iconfont icon-shangpinguanli"></i>商品管理</a>
+                        <ul class="submenu mh_me1">
+                            <li class='stockctl'><a href="#">库存管理&nbsp;(<span class="mh_total">total</span>)</a></li>
+                            <li class='ontheman'><a href="#">上架管理 </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="iconfont icon-shangjiaguanli"></i>商家管理 </a></li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-dingdanguanli"></i>订单管理 </a>
+                        <span class="jquery-accordion-menu-label">12 </span>
+                    </li>
+                  <li class="payBtn">
+                        <a href="javascript:;"><i class="iconfont icon-shouyin"></i>收银管理 </a>
+                  </li>
+                  <li><a href="#"><i class="iconfont icon-quanxianguanli"></i>权限管理 </a></li>
+                  <li><a href="#"><i class="iconfont icon-iconfontyuangongguanli"></i>员工管理 </a>
+                  </li>
+                  <li><a href="#"><i class="iconfont icon-huigou010"></i>采购管理 </a></li>
+                  <li><a href="#"><i class="iconfont icon-tongjibaobiao"></i>报表统计</a></li>
+                </ul>
+                <div class="jquery-accordion-menu-footer">收货、入库、点仓、出库、查价、销售、盘点
+                </div>
+            </div> 
+        </div>       
+        <div class="m2 fr">
+            <div class="mh_hed">
+                <ul class='clearfix'>
+                     <li><a href="#"><i class="iconfont icon-rentoulianxirentongji"></i><br />admin</a></li>
+                    <li><a href='#'><i class="iconfont icon-wuzi"></i><br />帮助</a></li>
+                    <li><a href="#"><i class="iconfont icon-xinxi"></i><br />信息</a></li>
+                    <li><a href="#"><i class="iconfont icon-tuichu"></i><br />退出</a></li>
+                </ul>
+            </div>
+            <div class="mh_search clearfix">
+                <select name = 'sou' id ='sou' class='fl'>
+                      <option value ="barCode">条形码</option>
+                      <option value ="name" selected>商品名称</option>
+                      <option value="gener">分类</option>
+                      <option value="supplier">供应商</option>
+                </select>
+                <input type="text" id = 'searchp' class='fl' placeholder='输入你想搜索的商品'/>
+                <i class="iconfont icon-fangdajing"></i>
+                <button class='mh_select fl'>搜索</button>
+                <span class="shuaxin">返回首页</span>
+                <button class="addgoods">新增商品</button>
+                <div class="tipnull"></div>
+            </div>
+            <div class="mh_box">
+                <div id='output'></div>
+                <div class="yema">
+                    <ul class='yemaul clearfix'></ul>
+                </div>
+                <div id='tc'>
+                    <div class="title">
+                        <h4>商品编辑:</h4>
+                        <span id='del'>&times;</span>    
+                    </div>
+                    <div id="content" class='clearfix'>
+                        <div class="mc1 fl">
+                            <label for="goodsId">条形码</label><input type="text" id='goodsId' disabled="disabled"/><br />
+                            <label for="goodsName">商品名称</label><input type="text" id='goodsName'/><br />
+                            <label for="gstyle">分类</label><input type="text" id='gstyle'/><br />
+                            <label for="img">销售价</label><input type="text" id='img'/><br />
+                            <label for="p_good">VIP价格</label><input type="text" id='p_good'/><br />
+                            <label for="old_good">库存数量</label><input type="text" id='old_good'/>
+                        </div>
+                        <div class="mc2 fl">
+                             <label for="star">上架数量</label><input type="text" id='star'/><br />
+                            <label for="hot">供应商</label><input type="text" id='hot'/><br />
+                            <label for="hot">生产日期</label><input type="text" id='hot'/><br />
+                            <label for="hot">保质日期</label><input type="text" id='hot'/><br />
+                            <label for="hot">进货价</label><input type="text" id='hot'/>
+                        </div>
+                        <button class='tsave'>保存</button>
+                    </div>
+                </div>
+                <div id="all"></div>
+                <div id='tc1'>
+                    <div class="title">
+                        <h4>商品编辑:</h4>
+                        <span id='del1'>&times;</span>    
+                    </div>
+                    <div id="content1" class='clearfix'>
+                        <div class="mc1 fl">
+                            <label for="goodsId">条形码</label><input type="text" id='goodsId'/><br />
+                            <label for="goodsName">商品名称</label><input type="text" id='goodsName'/><br />
+                            <label for="gstyle">分类</label><input type="text" id='gstyle'/><br />
+                            <label for="img">销售价</label><input type="text" id='img'/><br />
+                            <label for="p_good">VIP价格</label><input type="text" id='p_good'/><br />
+                            <label for="old_good">库存数量</label><input type="text" id='old_good'/>
+                        </div>
+                        <div class="mc2 fl">
+                             <label for="star">上架数量</label><input type="text" id='star'/><br />
+                            <label for="hot">供应商</label><input type="text" id='hot'/><br />
+                            <label for="hot">生产日期</label><input type="text" id='hot'/><br />
+                            <label for="hot">保质日期</label><input type="text" id='hot'/><br />
+                            <label for="hot">进货价</label><input type="text" id='hot'/>
+                        </div>
+                        <button class='tsave1'>录入商品库</button>
+                    </div>
+                </div>
+                <div id="all1"></div>
+        </div>
+        </div>
+    </div>
+    <script src="./js/require.js" data-main='./js/index'></script>
+    </body>
+</html>
