@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+	<script src="../libs/jquery-3.2.1.min.js"></script>
+	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/globals.js"></script>
+	<script src="../js/login.js"></script>
+</head>
+<body>
+	<div id="dl">
+		<div class="dl_login">
+				
+				<div class="form-group">
+					 <h2>超市管理系统</h2> 	
+				</div>
+				
+				<div class="form-group">
+					<p>
+						<a href="#">登录</a><a href="./reg.html">注册</a>
+					</p>
+				</div>
+				<div class="form-group">
+					<p>
+						<label for="dl_usename">用户名：</label><input type="text" id="dl_usename">
+					</p>
+				</div>
+				<div class="form-group">
+					<p>
+						<label for="dl_password">密码：</label><input type="password" id="dl_password">
+					</p>
+				</div>
+				<div class="form-group">
+					<p>
+						职位：<label><input type="radio" name="position" value="经理">经理</label><label><input type="radio" name="position" value="员工">员工</label>
+					</p>
+				</div>
+				<div class="form-group">
+					<p>
+						<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">登录</button>
+					</p>
+				</div>
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+					<!-- 	<h4 class="modal-title" id="myModalLabel">
+						模态框（Modal）标题
+					</h4> -->
+					</div>
+					<div class="modal-body">
+						<span class="MB"></span>
+					</div>
+					<div class="modal-footer">
+						<!-- <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+						</button> -->
+						<button type="button" class="btn btn-primary deng">
+							login...
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</script>
+
+	</script>
+</body>
+</html>

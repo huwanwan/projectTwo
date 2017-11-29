@@ -1,0 +1,101 @@
+body{
+    background:url('../img/g01.jpg')
+}
+#dl{
+	width:100%;
+    position: absolute;
+    height:500px;
+    top:105px;
+    label{
+        display:inline-block;
+        width:70px;
+        text-align:left;
+    }
+    .dl_login{
+    	position:absolute;
+        top:50%;
+        left:1000px;
+        width:400px;
+        transform:translate(-50%,-50%);
+        background:rgba(133, 100, 132, 0.7);
+
+        padding:20px;
+        .form-group{
+        	h2{
+                font-size:30px;
+                text-align:center;
+                margin-top:0px;
+            }
+        	>p{
+        		padding:5px 10px;
+        		color:#fff;
+        		font-size:14px;
+        	
+        		input{
+        			line-height:30px;
+        			width:250px;
+                    background:#cfdbd9;
+                    padding:0 5px;
+        		}
+                label{
+                    display:inline-block;
+                    width:70px;
+                    text-align:left;
+                    input{
+                        width:20px;
+                    }
+                }	
+        	}
+            &:nth-child(1){
+                margin-bottom:5px;
+            }
+            &:nth-child(2){
+                margin-bottom:5px;
+                >p{
+                    padding:0;
+                    font-size:20px;
+                    text-align:center;
+                    a{
+                        text-decoration:none;
+                        color:black;
+                        display:inline-block;
+                        height:25px;
+                        width:50px;
+                        padding:3px;
+                        line-height:20px;
+                        &:hover{
+                            background:pink;
+                            color:red;
+                        }
+                    }
+                    a:first-child{
+                        margin-right:10px;
+                        background:pink;
+                        color:red;
+                    }
+                }
+            }
+        	&:nth-child(3),&:nth-child(4){
+        		p{border:1px solid#ccc;}
+        		padding:0;
+        	}
+            &:nth-child(5){
+                input{
+                    margin-left:20px;
+                }
+            }
+        	&:nth-child(6){
+        		p{  
+        			padding:0;
+        			button{
+            			width:100%;
+            			line-height:25px;
+            			background:rgba(156, 83, 14, 0.6);
+            			color:#fff;
+        			}
+        		}	
+        	}
+        	
+        }
+    }
+}

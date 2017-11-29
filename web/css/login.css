@@ -1,0 +1,113 @@
+body {
+  background: url("../img/g01.jpg");
+}
+
+#dl {
+  width: 100%;
+  position: absolute;
+  height: 500px;
+  top: 105px;
+}
+
+#dl label {
+  display: inline-block;
+  width: 70px;
+  text-align: left;
+}
+
+#dl .dl_login {
+  position: absolute;
+  top: 50%;
+  left: 1000px;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  background: rgba(133, 100, 132, 0.7);
+  padding: 20px;
+}
+
+#dl .dl_login .form-group h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#dl .dl_login .form-group > p {
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+#dl .dl_login .form-group > p input {
+  line-height: 30px;
+  width: 250px;
+  background: #cfdbd9;
+  padding: 0 5px;
+}
+
+#dl .dl_login .form-group > p label {
+  display: inline-block;
+  width: 70px;
+  text-align: left;
+}
+
+#dl .dl_login .form-group > p label input {
+  width: 20px;
+}
+
+#dl .dl_login .form-group:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+#dl .dl_login .form-group:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+#dl .dl_login .form-group:nth-child(2) > p {
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+#dl .dl_login .form-group:nth-child(2) > p a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  height: 25px;
+  width: 50px;
+  padding: 3px;
+  line-height: 20px;
+}
+
+#dl .dl_login .form-group:nth-child(2) > p a:hover {
+  background: pink;
+  color: red;
+}
+
+#dl .dl_login .form-group:nth-child(2) > p a:first-child {
+  margin-right: 10px;
+  background: pink;
+  color: red;
+}
+
+#dl .dl_login .form-group:nth-child(3), #dl .dl_login .form-group:nth-child(4) {
+  padding: 0;
+}
+
+#dl .dl_login .form-group:nth-child(3) p, #dl .dl_login .form-group:nth-child(4) p {
+  border: 1px solid #ccc;
+}
+
+#dl .dl_login .form-group:nth-child(5) input {
+  margin-left: 20px;
+}
+
+#dl .dl_login .form-group:nth-child(6) p {
+  padding: 0;
+}
+
+#dl .dl_login .form-group:nth-child(6) p button {
+  width: 100%;
+  line-height: 25px;
+  background: rgba(156, 83, 14, 0.6);
+  color: #fff;
+}

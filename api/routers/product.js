@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-24 18:51:14
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-27 16:22:46
+* @Last Modified time: 2017-11-29 18:55:40
 */
 var mongo = require('../db/dbHelpers').Mongo;
 var apiResult = require('../modules/apiResult');
@@ -27,7 +27,7 @@ module.exports = {
                     res.send(apiResult(false,{'err':'error'}));
                 }
             })
-        })
+        });
         app.post('/getProduct',function(req,res){
             var qty;
             var pageNo;
@@ -50,7 +50,7 @@ module.exports = {
                     res.send(apiResult(false,{'err':'error'}));
                 }
             })
-        })
+        });
         app.post('/updateProduct',function(req,res){
             mongo.upload('product',req.body,function(_result){
                 if(_result.status &&_result.data.result.n == 1){

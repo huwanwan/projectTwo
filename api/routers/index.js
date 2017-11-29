@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-24 16:54:27
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-29 14:47:34
+* @Last Modified time: 2017-11-29 16:25:06
 */
 
 var express = require('express');
@@ -16,7 +16,7 @@ var socket = require('./socket');
 var order = require('./order');
 var pend = require('./pend');
 var purchase = require('./purchase');
-// var upPath = path.join(__dirname,'/');
+var put_socket = require('./put_socket.js')
 module.exports = {
     start:function(_port){
         // 设置全局的post使用bp;

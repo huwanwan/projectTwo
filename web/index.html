@@ -33,7 +33,7 @@
                   <li><a href="#"><i class="iconfont icon-quanxianguanli"></i>权限管理 </a></li>
                   <li><a href="#"><i class="iconfont icon-iconfontyuangongguanli"></i>员工管理 </a>
                   </li>
-                  <li><a href="#"><i class="iconfont icon-huigou010"></i>采购管理 </a></li>
+                  <li class="purchase"><a href="javascript:;"><i class="iconfont icon-huigou010"></i>采购管理 </a></li>
                   <li><a href="#"><i class="iconfont icon-tongjibaobiao"></i>报表统计</a></li>
                 </ul>
                 <div class="jquery-accordion-menu-footer">收货、入库、点仓、出库、查价、销售、盘点
@@ -43,10 +43,10 @@
         <div class="m2 fr">
             <div class="mh_hed">
                 <ul class='clearfix'>
-                     <li><a href="#"><i class="iconfont icon-rentoulianxirentongji"></i><br />admin</a></li>
+                     <li><a href="#"><i class="iconfont icon-rentoulianxirentongji"></i><br /><span class="username">admin</span></a></li>
                     <li><a href='#'><i class="iconfont icon-wuzi"></i><br />帮助</a></li>
                     <li><a href="#"><i class="iconfont icon-xinxi"></i><br />信息</a></li>
-                    <li><a href="#"><i class="iconfont icon-tuichu"></i><br />退出</a></li>
+                    <li><a href="#"><i class="iconfont icon-tuichu"></i><br /><span class="exit">退出</span></a></li>
                 </ul>
             </div>
             <div class="mh_search clearfix">
@@ -55,6 +55,7 @@
                       <option value ="name" selected>商品名称</option>
                       <option value="gener">分类</option>
                       <option value="supplier">供应商</option>
+                      <option value="purchase">采购单号</option>
                 </select>
                 <input type="text" id = 'searchp' class='fl' placeholder='输入你想搜索的商品'/>
                 <i class="iconfont icon-fangdajing"></i>
@@ -64,7 +65,7 @@
                 <div class="tipnull"></div>
             </div>
             <div class="mh_box">
-                <div id='output'></div>
+                <div id='output'><img src="img/index.gif"/></div>
                 <div class="yema">
                     <ul class='yemaul clearfix'></ul>
                 </div>

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-24 16:11:46
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-28 13:13:06
+* @Last Modified time: 2017-11-29 19:08:33
 */
 
 var mongoClient = require('mongodb').MongoClient;
@@ -18,7 +18,6 @@ mongoClient.connect(url,function(_err,_db){
 module.exports = {
     select:function(_collection,_condition,_cb){
         db.collection(_collection).find(_condition || {}).toArray(function(_err,_result){
-            console.log(_result)
             _cb(apiResult(_err ? false : true,_err || _result));
         })
     },
@@ -36,14 +35,20 @@ module.exports = {
             seleData = {'name' : _condition.name};
         }else if(_collection == 'order'){
             seleData = {'orderNum':_condition.orderNum};
+        }else if(_collection == 'purchase'){
+            seleData = {'purchase' : _condition.purchase};
         }
         db.collection(_collection).find(seleData).toArray(function(_err,_result){
+            console.log(_err)
             if(_err){
                 console.log('err:' + err);
             }else{
-                whereData = _result;
+                whereData = _result[0];
             }
-            db.collection(_collection).update(whereData[0],_condition,function(_err,_result){
+            if(_condition._id){
+                delete _condition._id;
+            }
+            db.collection(_collection).update(whereData,_condition,function(_err,_result){
                 _cb(apiResult(_err ? false : true,_err || _result));
             })
         })

@@ -31,7 +31,7 @@
 .m2{
     width: 967px;
     height: 669px;
-    margin-right: 30px;
+    margin-left:171px;
     background: #049372;
     border-radius:0 0 20px 20px;
     box-shadow: 0 20px 50px #333;
@@ -156,6 +156,10 @@
         padding-top: 20px;
         overflow-x: hidden;
         border-bottom:3px dashed #049372;
+        img{
+            width: 915px;
+            height: 481px;
+        }
         .yema{
             .yemaul{
                 margin-top: 20px;
@@ -176,6 +180,7 @@
             }
         }
          #output{
+
             .payRight{
                 float:left;
                 caption{
@@ -183,10 +188,15 @@
                     font-weight:bold !important;
                     padding-left:2px !important;
                 }
+                td{
+                    color:#000 !important;
+                }
             }
             input{
                 display: block;
             }
+            .make_m{background:none;}
+            .del_m{background:none;}
             table{
                 border-collapse:collapse;
                 border: 1px solid #ccc;
@@ -208,7 +218,13 @@
                     white-space: nowrap;
                 }
                 tr:nth-child(odd){
-                    background: #EEEEEE;
+                    background: #03A678;
+                    td{
+                      color:#fff;
+                      input{
+                          color:#fff;
+                      }
+                    }
                 }
                 .make{
                     margin-bottom: 5px;
@@ -229,7 +245,7 @@
         }      
         #tc{
             width: 615px;
-            height: 310px;
+            height: 373px;
             display: none;
             border-radius:10px 10px;
             position: absolute;
@@ -300,7 +316,7 @@
         }
         #tc1{
             width: 615px;
-            height: 310px;
+            height: 373px;
             display: none;
             border-radius:10px 10px;
             position: absolute;

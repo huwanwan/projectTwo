@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reg</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/reg.css">
+	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+	<script src="../libs/jquery-3.2.1.min.js"></script>
+	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/globals.js"></script>
+	<script src="../js/reg.js"></script>
+</head>
+<body>
+	<div class="reg">
+		<div class="biao">
+			<div class="form-group">
+				<h2>超市管理系统</h2>
+				<p>
+					<label for="username">用户名:</label><input type="username" id="username" placeholder="请输入中文昵称">
+				</p>
+				<!-- <span class="ts_use"></span> -->
+			</div>
+			<div class="form-group">
+				<p>
+					<label for="password">密码:</label><input type="password" id="password" placeholder="不能有空格，长度小于20 ">
+				</p>
+				<!-- <span class="ts_pas"></span> -->
+			</div>
+			<div class="form-group">
+				<p>
+					职位：<label><input type="radio" name="position" value="经理">经理</label><label><input type="radio" name="position" value="员工">员工</label>
+				</p>
+			</div>
+			<div class="form-group">
+				<p>
+					<label><input type="checkbox" id="checkbox" value="123">我已阅读并同意</label>
+				</p>
+			</div>
+			<div class="form-group">
+				<p>
+					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">确认并注册</button>
+				</p>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+					<!-- 	<h4 class="modal-title" id="myModalLabel">
+						模态框（Modal）标题
+					</h4> -->
+					</div>
+					<div class="modal-body">
+						<span class="MB"></span>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+						</button>
+						<button type="button" class="btn btn-primary deng">
+							去登录
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
