@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-27 16:49:43
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-29 21:23:08
+* @Last Modified time: 2017-11-29 21:34:12
 */
 
 require(['config'],function(){
@@ -630,7 +630,7 @@ require(['config'],function(){
                       upGoods(ele){
                         if(this.type){  
                             var $qty = $(ele).parents('tr').find('.qty');
-                            var inp = $('<input/>').val($qty.text()).css('width',62);
+                            var inp = $('<input/>').val($qty.text()).css({'width':62,'color':'#333','textAlign':'center'});
                             $qty.html(inp);
                             $(ele).text('确定');
                             this.type = false;
